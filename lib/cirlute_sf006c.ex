@@ -67,7 +67,6 @@ defmodule Cirlute.SF006C do
   @spec set_angle(term(), integer()) :: {:ok, term()} | {:error, term()}
   def set_angle(self = %T{}, angle) when is_integer(angle) and angle >= 0 and angle <= 180 do
     offset = angle_to_analog(self, angle) + self.offset
-    self = %T{self | offset: offset}
 
     with :ok <-
            Kernel.apply(self.pwm_module, :set_pwm, [
