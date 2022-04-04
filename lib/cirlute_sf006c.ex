@@ -72,7 +72,7 @@ defmodule Cirlute.SF006C do
            Kernel.apply(self.pwm_module, :set_pwm, [
              self.pwm_driver,
              self.pwm_channel,
-             self.offset
+             offset
            ]) do
       {:ok, self}
     else
