@@ -53,7 +53,7 @@ defmodule Cirlute.SF006C do
          offset: opts[:offset] || 0,
          min_pulse_width: opts[:min_pulse_width] || 600,
          max_pulse_width: opts[:max_pulse_width] || 2400,
-         default_pulse_width: opts[:default_pulse_width] || 1500
+         default_pulse_width: opts[:default_pulse_width] || 1500,
          pulse_width: 1500
        }}
     else
