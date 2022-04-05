@@ -26,7 +26,7 @@ defmodule Cirlute.SF006C do
             offset: 0,
             min_pulse_width: 600,
             max_pulse_width: 2400,
-            default_pulse_width: 1500
+            default_pulse_width: 1500,
             pulse_width: 1500
 
   @type pwm_opt() :: {term(), non_neg_integer(), pos_integer(), number()}
